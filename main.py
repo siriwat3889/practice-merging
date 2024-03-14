@@ -5,6 +5,9 @@ def main():
 
 
 def interpret_bmi(bmi):
+    """
+    AV-JAPAN 777
+    """
     if bmi < 18.5:
         return "Underweight"
     elif bmi < 25:
@@ -16,6 +19,7 @@ def interpret_bmi(bmi):
 
 
 def calculate_bmi(weight: float, height_cm: float) -> dict:
+    # convert height from cm to m
     height_m = height_cm / 100
     bmi = weight / (height_m**2)
     return {
@@ -27,6 +31,7 @@ def calculate_bmi(weight: float, height_cm: float) -> dict:
 
 
 def hello_thai():
+    # return "สวัสดีชาวโลก"
     return "Hello, World!".center(50, "*")
 
 if __name__ == "__main__":
